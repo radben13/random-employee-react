@@ -1,0 +1,32 @@
+{
+  "name": "random-employee-react",
+  "version": "1.0.0",
+  "description": "A quick jab at a React.js employee management tool",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.1.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radben13/random-employee-react.git"
+  },
+  "author": "Braden Van Wagenen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radben13/random-employee-react/issues"
+  },
+  "homepage": "https://github.com/radben13/random-employee-react#readme"
+}

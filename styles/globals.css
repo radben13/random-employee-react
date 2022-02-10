@@ -1,0 +1,82 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.layout-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-body > header {
+  display: flex;
+}
+
+.layout-body > section {
+  flex-grow: 1;
+}
+
+.layout-body > footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  color: #444;
+}
+
+.logo img {
+  margin-right: 2em;
+}
+
+.employee-list {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 25%);
+}
+@media screen and (max-width: 900px) {
+  .employee-list {
+    grid-template-columns: repeat(3, calc(100%/3));
+  }
+}
+@media screen and (max-width: 600px) {
+  .employee-list {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media screen and (max-width: 400px) {
+  .employee-list {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+.employee-link {
+  display: flex;
+}
+
+.employee-link > * {
+  display: block;
+  padding: 5px;
+}
+
+.employee-link img {
+  margin-right: 5px;
+}
