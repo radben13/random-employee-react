@@ -1,12 +1,14 @@
 ## Getting Started
 
-First, run the development server:
+To install and run:
 
 ```bash
-npm run dev
+npm ci
+npm run build
+npm start
 ```
 
-Or, if you have Docker installed, you can use the docker image:
+Or, if you have Docker installed, you can build and use the docker image:
 
 ```bash
 docker build -t random-employee-react .
